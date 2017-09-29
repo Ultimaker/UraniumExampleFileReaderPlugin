@@ -24,5 +24,6 @@ class ExampleFileReader(MeshReader):
         #Put the mesh inside a scene node.
         result_node = SceneNode()
         result_node.setMeshData(builder.build())
+        result_node.setName(file_name) #Typically the file name that the mesh originated from is a good name for the node.
 
         return result_node
