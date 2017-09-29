@@ -1,0 +1,8 @@
+{
+    "name": "Example File Reader",
+    "author": "Ultimaker",
+    "version": "1.0",
+    "api": 4,
+    "description": "Example file reader to instruct people on how to create Uranium file readers.",
+    "catalog": "uranium"
+}
