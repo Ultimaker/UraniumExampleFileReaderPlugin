@@ -20,6 +20,7 @@ class ExampleFileReader(MeshReader):
 
         builder = MeshBuilder() #To construct your own mesh, look at the methods provided by MeshBuilder.
         builder.addCube(10, 10, 10, Vector(0, 0, 0)) #Cube of 10 by 10 by 10.
+        builder.calculateNormals()
 
         #Put the mesh inside a scene node.
         result_node = SceneNode()
