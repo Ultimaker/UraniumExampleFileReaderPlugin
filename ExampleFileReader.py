@@ -7,14 +7,14 @@ from UM.Math.Vector import Vector #Helper class required for MeshBuilder.
 from UM.Scene.SceneNode import SceneNode #The result we must return when reading.
 
 class ExampleFileReader(MeshReader):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, application):
+        super().__init__(application)
         self._supported_extensions = [".txt"] #Sorry, you also have to specify it here.
 
     ##  Read the specified file.
     #
     #   \return A scene node that represents what's in the file.
-    def read(self, file_name):
+    def _read(self, file_name):
         #Here you would typically open the file, read its contents, parse it, etc.
         #For this example we will just always create a cube and return that.
 

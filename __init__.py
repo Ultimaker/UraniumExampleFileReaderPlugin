@@ -29,4 +29,4 @@ def getMetaData():
 #
 #   \param app The application that the plug-in needs to register with.
 def register(app):
-    return {"mesh_reader": ExampleFileReader.ExampleFileReader()}
+    return {"mesh_reader": ExampleFileReader.ExampleFileReader(app)}
