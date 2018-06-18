@@ -1,6 +1,7 @@
-# Copyright (c) 2017 Ultimaker B.V.
+# Copyright (c) 2018 Ultimaker B.V.
 # This example is released under the terms of the AGPLv3 or higher.
 
+from UM.Application import Application #To pass to the parent constructor.
 from UM.Mesh.MeshBuilder import MeshBuilder #To create a mesh to put in the scene.
 from UM.Mesh.MeshReader import MeshReader #This is the plug-in object we need to implement if we want to create meshes. Otherwise extend from FileReader.
 from UM.Math.Vector import Vector #Helper class required for MeshBuilder.
@@ -8,7 +9,7 @@ from UM.Scene.SceneNode import SceneNode #The result we must return when reading
 
 class ExampleFileReader(MeshReader):
     def __init__(self):
-        super().__init__()
+        super().__init__(Application.getInstance())
         self._supported_extensions = [".txt"] #Sorry, you also have to specify it here.
 
     ##  Read the specified file.
