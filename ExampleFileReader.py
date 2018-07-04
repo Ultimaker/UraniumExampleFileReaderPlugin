@@ -9,7 +9,7 @@ from UM.Scene.SceneNode import SceneNode #The result we must return when reading
 
 class ExampleFileReader(MeshReader):
     def __init__(self):
-        super().__init__(Application.getInstance())
+        super().__init__()
         self._supported_extensions = [".txt"] #Sorry, you also have to specify it here.
 
     ##  Read the specified file.
