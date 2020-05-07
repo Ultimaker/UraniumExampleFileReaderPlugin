@@ -2,7 +2,8 @@
     "name": "Example File Reader",
     "author": "Ultimaker",
     "version": "1.0",
-    "api": "6.0",
+    "api": 6,
+    "supported_sdk_versions": ["6.0.0", "7.0.0"],
     "description": "Example file reader to instruct people on how to create Uranium file readers.",
     "catalog": "uranium"
 }
